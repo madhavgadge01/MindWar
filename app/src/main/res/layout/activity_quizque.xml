@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".resultquiz">
+
+
+    <ImageView
+        android:id="@+id/background_image2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.8"
+        android:contentDescription="background"
+        android:scaleType="centerCrop"
+        android:src="@drawable/quizeb"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <LinearLayout
+        android:id="@+id/questionCard"
+        android:layout_width="363dp"
+        android:layout_height="163dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/rounded_purple"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/questionNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="01"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/questionText"
+            android:layout_width="370dp"
+            android:layout_height="125dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Which planet in the Solar System is the smallest?"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/timerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="time left 12 min.52 sec."
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/optionsLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionCard" />
+
+    <LinearLayout
+        android:id="@+id/optionsLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/questionCard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="32dp"
+        android:gravity="center">
+
+
+        <LinearLayout
+            android:id="@+id/ButtonA"
+            android:layout_width="337dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/bg_without_border">
+
+            <TextView
+
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="36dp"
+                android:background="@drawable/circle_label"
+                android:padding="12dp"
+                android:text="A"
+                android:textSize="18dp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/optionTextA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pluto"
+                android:textColor="@android:color/white"
+                android:textSize="25sp"
+                android:fontFamily="sans-serif-black"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ButtonB"
+            android:layout_width="337dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bg_without_border"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="36dp"
+                android:background="@drawable/circle_label"
+                android:padding="12dp"
+                android:text="B"
+                android:textSize="18dp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/optionTextB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pluto"
+                android:textColor="@android:color/white"
+                android:textSize="25sp"
+                android:fontFamily="sans-serif-black"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ButtonC"
+            android:layout_width="337dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bg_without_border"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="36dp"
+                android:background="@drawable/circle_label"
+                android:padding="12dp"
+                android:text="C"
+                android:textSize="18dp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/optionTextC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pluto"
+                android:textColor="@android:color/white"
+                android:textSize="25sp"
+                android:fontFamily="sans-serif-black"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ButtonD"
+            android:layout_width="337dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bg_without_border"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="36dp"
+                android:background="@drawable/circle_label"
+                android:padding="12dp"
+                android:text="D"
+                android:textSize="18dp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/optionTextD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pluto"
+                android:textColor="@android:color/white"
+                android:textSize="25sp"
+                android:fontFamily="sans-serif-black"
+                />
+        </LinearLayout>
+
+        <!-- Add more options: B, C, D (same layout as above, just change text) -->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="70dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:id="@+id/previous"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bg_without_border"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="12dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="previous"
+                android:textColor="@android:color/white"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/next"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_without_border"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="6dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="Next"
+                android:textColor="@android:color/white"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

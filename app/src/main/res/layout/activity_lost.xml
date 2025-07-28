@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".resultquiz"
+    android:layout_gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Oh no!"
+        android:textSize="70dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/wining_card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/background_image2"
+        app:layout_constraintVertical_bias="0.415">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/background_image2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.8"
+        android:contentDescription="background"
+        android:scaleType="centerCrop"
+        android:src="@drawable/quizeb"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <LinearLayout
+        android:id="@+id/wining_card"
+        android:layout_width="284dp"
+        android:layout_height="218dp"
+        android:background="@drawable/rounded_purple"
+        android:elevation="4dp"
+        android:orientation="vertical"
+
+        app:layout_constraintBottom_toBottomOf="@+id/background_image2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.432">
+
+
+        <TextView
+            android:id="@+id/you"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:fontFamily="sans-serif-black"
+            android:text=" YOU  "
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="60dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/win"
+
+            android:layout_width="match_parent"
+            android:layout_height="108dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:fontFamily="sans-serif-black"
+            android:text="LOST"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="90dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/wining"
+        android:layout_width="322dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="108dp"
+        android:background="@drawable/rounded_purple"
+
+        android:elevation="4dp"
+
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/background_image2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wining_card">
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:fontFamily="sans-serif-black"
+            android:text="your score is : 0/0"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/retry"
+        android:layout_width="184dp"
+        android:layout_height="73dp"
+        android:background="@drawable/rounded_purple"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wining">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-black"
+            android:text="TRY AGAIN"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
