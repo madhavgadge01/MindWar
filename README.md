@@ -1,31 +1,42 @@
-# 🎵 Sangeet - Android Music Player App
+# 🧠 MindWar - Android Quiz App
 
-**Sangeet** is a simple and clean **Android Music Player app** designed to play offline audio files stored on your device.  
-This app focuses on smooth UI and core functionality with a modern Android interface.
+MindWar is a fun and engaging Android quiz application built using **Java**. It features a simple and clean UI, multiple questions, and interactive options to challenge your general knowledge.
 
 ---
 
 ## ✨ Features
 
-- 🎧 Play local music files
-- 📂 Auto-detect songs from device storage
-- ⏯️ Play, Pause, Next, Previous controls
-- 🌓 Light and smooth UI 
-- 🔊 Volume and seek control
+- 📋 Multiple choice questions
+- 🧠 Score tracking
+- 🎮 Simple, clean, and responsive UI
+- 📱 Built entirely with Java and XML
 
 ---
 
+## 📸 Screenshots
 
-## ⚙️ Built With
-
-- **Android Studio**
-- **Java**
-- **MediaPlayer API**
-- **ConstraintLayout & LinearLayout**
-- Custom icons and drawable resources
+| Quiz Screen | Result Screen |
+|-------------|---------------|
+| ![Quiz Screen](quiz.png) | ![Result Screen](screenshots/result.png) |
 
 ---
-## 👨‍💻 Author
 
-- [Madhav Gadge](https://github.com/madhavgadge)
-- [linkdin](https://www.linkedin.com/in/madhav-gadge-610177343?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
+## 🛠️ Built With
+
+- Java
+- Android Studio
+- Xml
+- ConstraintLayout
+- LinearLayout (Button)
+
+---
+
+## 🚀 Getting Started
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/madhavgadge01/MindWar.git
+---
+  ## 👨‍💻 Author
+  -[Madhav Gadge](https://github.com/madhavgadge)
+  -[Linkdin](https://www.linkedin.com/in/madhav-gadge-610177343?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
