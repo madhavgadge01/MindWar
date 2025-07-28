@@ -10,15 +10,6 @@ MindWar is a fun and engaging Android quiz application built using **Java**. It 
 - 🧠 Score tracking
 - 🎮 Simple, clean, and responsive UI
 - 📱 Built entirely with Java and XML
-
----
-
-## 📸 Screenshots
-
-| Quiz Screen | Result Screen |
-|-------------|---------------|
-| ![Quiz Screen](quiz.png) | ![Result Screen](screenshots/result.png) |
-
 ---
 
 ## 🛠️ Built With
@@ -40,3 +31,12 @@ MindWar is a fun and engaging Android quiz application built using **Java**. It 
   ## 👨‍💻 Author
   -[Madhav Gadge](https://github.com/madhavgadge)
   -[Linkdin](https://www.linkedin.com/in/madhav-gadge-610177343?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
+
+  ---
+
+## 📸 Screenshots
+
+Front Screen            |        Quiz Screen       |                Result Screen             |
+------------------------|--------------------------|------------------------------------------|
+![Front Screen](front_page.png)| ![Quiz Screen](quizscreen.png) | ![Result Screen](lostscreen.png) |
+
